@@ -1,0 +1,8 @@
+<button (click)="newGame()">New Game</button>
+
+<main>
+  <app-square
+    *ngFor="let val of squares; let i = index"
+    [value]="val"
+  ></app-square>
+</main>
