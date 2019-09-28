@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tictactoe-46053": {
+      "hosting": {
+        "tic-tac-toe": [
+          "tictactoe-46053"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firebasics-c99c2"
+  }
+}

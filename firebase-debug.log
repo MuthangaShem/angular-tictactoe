@@ -1,0 +1,54 @@
+[debug] [2019-09-28T20:33:04.677Z] ----------------------------------------------------------------------
+[debug] [2019-09-28T20:33:04.679Z] Command:       /Users/shem/.nvm/versions/node/v10.15.3/bin/node /Users/shem/.nvm/versions/node/v10.15.3/bin/firebase init
+[debug] [2019-09-28T20:33:04.679Z] CLI Version:   7.4.0
+[debug] [2019-09-28T20:33:04.680Z] Platform:      darwin
+[debug] [2019-09-28T20:33:04.680Z] Node Version:  v10.15.3
+[debug] [2019-09-28T20:33:04.681Z] Time:          Sat Sep 28 2019 23:33:04 GMT+0300 (East Africa Time)
+[debug] [2019-09-28T20:33:04.681Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-28T20:33:04.690Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-28T20:33:04.690Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/shem/Desktop/tic-tac-toe
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using firebasics-c99c2.
+[debug] [2019-09-28T20:33:09.482Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/firebasics-c99c2  
+ 
+[debug] [2019-09-28T20:33:10.448Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2019-09-28T20:33:45.885Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2019-09-28T20:34:09.778Z] Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1088:19)
+    at Object.onceWrapper (events.js:277:13)
+    at TLSSocket.emit (events.js:194:15)
+    at TLSSocket.EventEmitter.emit (domain.js:441:20)
+    at endReadableNT (_stream_readable.js:1125:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
