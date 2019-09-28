@@ -10,4 +10,7 @@ export class SquareComponent {
   constructor() { }
 
   @Input() value: 'X' | 'O';
+  @Input() endGame: boolean;
+
+
 }
