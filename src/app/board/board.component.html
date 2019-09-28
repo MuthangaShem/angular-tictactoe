@@ -1,5 +1,27 @@
-<button (click)="newGame()">New Game</button>
-<p *ngIf="winner">Player {{ winner }} has won!!</p>
+<h1>
+  TicTacToe
+  <!-- <img height="100" src="../../assets/icons/tictac.jpg" alt="tictac image" /> -->
+</h1>
+
+<div class="winner" *ngIf="winner">
+  <h2>
+    Well done player {{ winner }}!! <br />
+    You won!! 👊
+  </h2>
+
+  <button mat-raised-button color="accent" (click)="newGame()">
+    New Game
+  </button>
+</div>
+<button
+  *ngIf="!winner"
+  style="margin-bottom: 10px"
+  mat-raised-button
+  color="accent"
+  (click)="newGame()"
+>
+  Restart Game
+</button>
 <main>
   <app-square
     *ngFor="let val of squares; let i = index"

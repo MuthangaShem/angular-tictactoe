@@ -1,1 +1,21 @@
-<button [disabled]="endGame">{{ value }}</button>
+<button disableRipple mat-stroked-button *ngIf="!value" [disabled]="endGame">
+  {{ value }}
+</button>
+<button
+  disableRipple
+  mat-stroked-button
+  color="warn"
+  *ngIf="value == 'X'"
+  [disabled]="endGame"
+>
+  {{ value }}
+</button>
+<button
+  disableRipple
+  mat-stroked-button
+  color="primary"
+  *ngIf="value == 'O'"
+  [disabled]="endGame"
+>
+  {{ value }}
+</button>
